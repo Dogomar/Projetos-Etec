@@ -1,0 +1,116 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f9f9f9, #e0e0e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #004080;
+    transform: translateY(0);
+}
+
+#message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#message.success {
+    color: #28a745;
+}
+
+#message.error {
+    color: #dc3545;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
